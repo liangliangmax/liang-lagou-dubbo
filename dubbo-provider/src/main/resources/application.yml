@@ -1,0 +1,16 @@
+dubbo:
+    application:
+        name: dubbo-provider
+    registry:
+        address: 172.16.62.216:2182
+        # 读者请自行更改zookeeper地址
+        protocol: zookeeper
+        check: false
+    protocol:
+        name: dubbo
+        port: 30003
+    monitor:
+        protocol: register
+
+server:
+    port: 8061
